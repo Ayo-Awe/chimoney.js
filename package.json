@@ -1,9 +1,9 @@
 {
-  "name": "chimoneyjs",
-  "version": "1.2.0",
-  "description": "node sdk for Chimoney api by the community. Maintained by Awe Ayomidipupo\"",
-  "main": "index",
+  "name": "chimoney.js",
+  "description": "NodeJS sdk for Chimoney API by the community. Maintained by Awe Ayomidipupo",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -13,20 +13,30 @@
   "keywords": [
     "chimoney",
     "chimoneyjs",
-    "chimoney-js"
+    "chimoney-js",
+    "chimoney.js",
+    "chimoney api"
   ],
   "author": "Awe Ayomidipupo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Chimoney/chimoney-community-projects/issues"
   },
-  "homepage": "https://github.com/Chimoney/chimoney-community-projects#readme",
+  "homepage": "https://chimoney.io/",
   "dependencies": {
     "axios": "^1.1.2",
     "dotenv": "^16.0.3",
-    "joi": "^17.6.3"
+    "joi": "^17.6.3",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "jest": "^29.2.0"
-  }
+    "@types/jest": "^29.5.0",
+    "@types/joi": "^17.2.3",
+    "@types/lodash": "^4.14.191",
+    "jest": "^29.2.0",
+    "prettier": "2.8.7",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2"
+  },
+  "type": "module"
 }
